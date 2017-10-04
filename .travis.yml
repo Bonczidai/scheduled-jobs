@@ -1,0 +1,4 @@
+script:
+  - echo 'Build start'
+  - java -version
+  - unzip --help
