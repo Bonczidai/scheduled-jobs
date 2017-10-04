@@ -8,7 +8,7 @@ script:
   - ls -l
 
   - >
-    0.9.60.0/cslang-cli/bin/cslang.bat run
+    cslang-cli/bin/cslang.bat run
     --f /0.9.60.0/cloud-slang-content/content/io/cloudslang/cloud/digital_ocean/v2/examples/delete_zombie_droplets.sl
     --cp /0.9.60.0/cloud-slang-content/content/
     --i token=${DO_TOKEN}
