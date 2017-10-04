@@ -1,10 +1,8 @@
 script:
   - java -version
   - unzip -q 0.9.60.0/cslang-cli-with-content.zip
-  - ls -l 0.9.60.0
-  - ls -l
 
-  - chmod +x cslang-cli/bin/cslang.bat
+  - chmod +x cslang-cli/bin/cslang
   - >
     cslang-cli/bin/cslang run
     --f 0.9.60.0/cloud-slang-content/content/io/cloudslang/cloud/digital_ocean/v2/examples/delete_zombie_droplets.sl
