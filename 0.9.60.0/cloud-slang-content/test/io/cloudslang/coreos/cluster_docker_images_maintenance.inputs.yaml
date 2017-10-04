@@ -1,0 +1,22 @@
+#   (c) Copyright 2014 Hewlett-Packard Development Company, L.P.
+#   All rights reserved. This program and the accompanying materials
+#   are made available under the terms of the Apache License v2.0 which accompany this distribution.
+#
+#   The Apache License is available at
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+####################################################
+test_cluster_docker_images_maintenance_success:
+  testSuites: [coreos]
+  description: >
+    This test cleans the CoreOS hosts in a cluster,
+    prepares a used and an unused Docker image,
+    runs the cluster_docker_images_maintenance flow,
+    checks that only the unused Docker image was deleted,
+    cleans up in the cluster.
+  testFlowPath: io.cloudslang.coreos.test_cluster_docker_images_maintenance
+  inputs:
+    - coreos_host: <coreos_host_1> # ip address of one host from the cluster
+    - coreos_username: core # username for the machine
+    - private_key_file: <private_key_file> # path to private key file
+  result: SUCCESS

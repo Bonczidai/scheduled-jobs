@@ -1,0 +1,4 @@
+setuptools
+jenkinsapi == 0.2.22
+requests == 2.8.1
+google-api-python-client

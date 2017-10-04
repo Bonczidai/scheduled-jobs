@@ -1,4 +1,10 @@
 script:
-  - echo 'Build start'
   - java -version
-  - unzip --help
+  - unzip /0.9.60.0/cslang-cli-with-content.zip
+  - echo "DO_TOKEN=${DO_TOKEN}"
+
+  - >
+    run
+    --f /0.9.60.0/cloud-slang-content/content/io/cloudslang/cloud/digital_ocean/v2/examples/delete_zombie_droplets.sl
+    --cp /0.9.60.0/cloud-slang-content/content/
+    --i token=${DO_TOKEN}
