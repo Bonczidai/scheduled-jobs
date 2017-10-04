@@ -3,6 +3,7 @@ script:
   - ls -l
   - ls -l 0.9.60.0
   - unzip -q 0.9.60.0/cslang-cli-with-content.zip
+  - ls -l 0.9.60.0
   - echo "DO_TOKEN=${DO_TOKEN}"
 
   - >
