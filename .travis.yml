@@ -1,7 +1,8 @@
 script:
   - java -version
   - ls -l
-  - unzip /0.9.60.0/cslang-cli-with-content.zip
+  - ls -l 0.9.60.0
+  - unzip 0.9.60.0/cslang-cli-with-content.zip
   - echo "DO_TOKEN=${DO_TOKEN}"
 
   - >
