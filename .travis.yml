@@ -7,6 +7,7 @@ script:
   - echo "DO_TOKEN=${DO_TOKEN}"
   - ls -l
 
+  - chmod +x cslang-cli/bin/cslang.bat
   - >
     cslang-cli/bin/cslang.bat run
     --f /0.9.60.0/cloud-slang-content/content/io/cloudslang/cloud/digital_ocean/v2/examples/delete_zombie_droplets.sl
